@@ -15,8 +15,7 @@ classDiagram
         -nombre: string
         -email: string
         -especialidad: string
-        +idGrupo(): void
-        +idEstudiante(): void
+        +idasignarCurso(): void
         +consultarCursosAsignados(): List<Curso>
     }
 
@@ -24,36 +23,39 @@ classDiagram
         -codigo: string
         -nombre: string
         -creditos: int
-        -descripcion: string
-        +crearGrupo(): void
-        +consultarGrupos(): List<Grupo>
+        +matricular(): void
+        +retirar(): void
     }
 
     class Grupo {
         -idGrupo: int
-        -numeroGrupo: int
+        -idCurso: int
+        -idProfesor: int
+        -idPeriodo: int
+        -capacidad:int 
+        -numerogrupo: int
         -horario: string
-        -aula: string
-        -cupos: int
         +idProfesor(): void
-        +idEstudiante(): void
         +idEstudiante(): void
     }
 
     class Periodo {
-        -idPeriodo: int
-        -anio: int
+        -año: int
         -nombre: string
         -activo: boolean
         +iniciarPeriodo(): void
         +finalizarPeriodo(): void
     }
 
-    Estudiante "1" --> "*" Grupo : se matricula en
-    Grupo "*" --> "1" Curso : pertenece a
-    Profesor "1" --> "*" Grupo : imparte
-    Periodo "1" --> "*" Grupo : contiene
-    Curso "1" --> "*" Grupo : se ofrece en
+    class Matricula{
+        -idMatricula: int
+        -idEstudiante: int
+        -idGrupo: int
+        -fechaMatricula: date
+    }
 
-
-
+    Estudiante "1" --> "1" Matricula : realiza
+    Matricula "1" --> "1" Grupo : pertenece a
+    Grupo "1" --> "1" Curso : imparte
+    Grupo "1" --> "*" Profesor : contiene
+    Grupo "1" --> "*" Periodo : se ofrece en
