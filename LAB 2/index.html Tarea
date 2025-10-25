@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- titulo -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edwing Martinez - laboratorios</title>
+</head>
+<body>
+    <img src="image.jpeg" alt="Representación de la imagen"/>
+</body>
+</html>

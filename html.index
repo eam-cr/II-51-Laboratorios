@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edwing Martinez - Laboratorio</title>
+    </title>
+</head>
+<body>
+    <a href="LAB 1/">Laboratorio 1</a>
+    <a href="LAB 2/">Laboratorio 2</a>
+    <a href="LAB 3/">Laboratorio 3</a>
+    <a href="LAB 4/">Laboratorio 4</a>
+</body>
+</html>
