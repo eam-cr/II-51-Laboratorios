@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- titulo -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edwing Martinez - laboratorios</title>
-</head>
-<body>
-    <img src="image.jpeg" alt="Representación de la imagen"/>
-</body>
+  <head>
+    <!--  cuerpo html  -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorio 2 - Edwing</title>
+  </head>
+  <body>
+    <h1>Laboratorio de Edwing Martinez</h1>
+     <p> Segundo laboratorio de Programacion de internet </p>
+     <p>Este es el segundo laboratorio</p>
+     <p>En este laboratorio se abordarán los conceptos de HTML y CSS.</p>
+    <h2>Objetivos</h2>
+    <li>Aprender a crear una pagina web basicas</li>
+    <li> Familiarizarse con las etiquetas HTML</li>
+    <li>Entender el uso de CSS para el diseño web</li>
+    <h2>Tablas</h2>
+    <table id="1">
+        <thead>
+            <body>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fernanda </td>
+                <td>25</td>
+                <td>Alajuela</td>
+            </tr>
+        <tr>
+            <td>Maria</td>
+            <td>30</td>
+            <td>San Jose</td>
+        </tr>
+        <tr>
+            <td>Jose</td>
+            <td>28</td>
+            <td>Cartago</td>
+        </tr>
+        </tbody>
+    
+
+      <td><img src="image.jpeg" alt="Representación de la imagen"/></td>
+      </table>
+      <p>Para más información, visita nuestro sitio web.</p>
+      <a href="https://www.ejemplo.com">Visita nuestro sitio</a>
+    </body>
 </html>
