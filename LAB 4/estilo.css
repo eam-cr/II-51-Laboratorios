@@ -1,0 +1,104 @@
+/* ======== ESTILOS GENERALES ======== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fc;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 2px 2px 5px #999;
+}
+
+section {
+    margin-top: 50px;
+}
+
+hr {
+    margin: 40px auto;
+    width: 60%;
+}
+
+/* ======== 1. SOMBRAS EN CAJAS ======== */
+.caja {
+    width: 200px;
+    height: 100px;
+    background-color: #4e73df;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.4);
+    transition: box-shadow 0.5s ease;
+}
+
+.caja:hover {
+    box-shadow: 15px 15px 25px rgba(0,0,0,0.6);
+}
+
+/* ======== 2. SOMBRAS EN TEXTO ======== */
+.titulo {
+    font-size: 40px;
+    color: #222;
+    text-shadow: 3px 3px 6px #aaa;
+}
+
+/* ======== 3. TRANSICIONES ======== */
+.boton {
+    background-color: #1cc88a;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.boton:hover {
+    background-color: #17a673;
+    transform: scale(1.1);
+}
+
+/* ======== 4. EFECTO COMBINADO ======== */
+.tarjeta {
+    width: 250px;
+    height: 150px;
+    background-color: #f6c23e;
+    text-align: center;
+    line-height: 150px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 10px;
+    margin: 40px auto;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.tarjeta:hover {
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.6);
+    transform: translateY(-10px);
+}
+
+/* ======== 5. IMAGEN CON EFECTO ======== */
+.imagen {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.5);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.imagen:hover {
+    transform: scale(1.05);
+    box-shadow: 12px 12px 25px rgba(0,0,0,0.7);
+}
+
+/* ======== PIE DE PÁGINA ======== */
+footer {
+    margin-top: 60px;
+    font-size: 14px;
+    color: #666;
+}

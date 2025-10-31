@@ -16,16 +16,15 @@
     <li> Familiarizarse con las etiquetas HTML</li>
     <li>Entender el uso de CSS para el diseño web</li>
     <h2>Tablas</h2>
-    <table id="1">
+
+    <table>
         <thead>
-            <body>
-            <tr>
+         <tr>
                 <th>Nombre</th>
                 <th>Edad</th>
                 <th>Ciudad</th>
             </tr>
         </thead>
-        <tbody>
             <tr>
                 <td>Fernanda </td>
                 <td>25</td>
@@ -41,9 +40,6 @@
             <td>28</td>
             <td>Cartago</td>
         </tr>
-        </tbody>
-    
-
       <td><img src="image.jpeg" alt="Representación de la imagen"/></td>
       </table>
       <p>Para más información, visita nuestro sitio web.</p>
