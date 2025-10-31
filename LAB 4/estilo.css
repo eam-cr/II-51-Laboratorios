@@ -87,13 +87,13 @@ hr {
 .imagen {
     width: 300px;
     border-radius: 10px;
-    box-shadow: 8px 8px 20px rgba(0,0,0,0.5);
+    box-shadow: 8px 8px 20px rgba(131, 2, 125, 0.5);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .imagen:hover {
     transform: scale(1.05);
-    box-shadow: 12px 12px 25px rgba(0,0,0,0.7);
+    box-shadow: 12px 12px 25px rgba(205, 231, 77, 0.7);
 }
 
 /* ======== PIE DE PÁGINA ======== */
