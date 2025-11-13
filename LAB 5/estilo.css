@@ -7,7 +7,7 @@
 }
 
 .pintar > .row > div {
-  background-color: #98cbff;
+  background-color: #1b7ada;
   border: 1px solid #000;
   padding: 10px;
 }
@@ -18,14 +18,14 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   p{
-    color: red !important;
+    color: rgb(255, 21, 0) !important;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   p{
-    color: blue !important;
+    color: rgb(116, 116, 228) !important;
   }
 }
 
