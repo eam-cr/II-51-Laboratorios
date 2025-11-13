@@ -53,7 +53,7 @@
     }
 
     nav a:hover {
-      background-color: #50e3c2;
+      background-color: #e8cc10;
       color: #333;
     }
 
@@ -151,7 +151,7 @@
       text-align: left;
     }
     .data-table th {
-      background-color: #20c9a4;
+      background-color: #c9b820;
       color: #333;
       font-weight: bold;
     }
