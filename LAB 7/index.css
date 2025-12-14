@@ -1,11 +1,18 @@
 .caja {
   padding: 10px;
-  border: 1px solid #eee3e3;
-  transition: background-color 0.3s;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s; 
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .caja.color {
-  background-color: #e0e2e2;
-  color: #0c5460;
+  background-color: #d86359;
+  color: #0b0ff4fc;
   font-weight: bold;
+}
+
+.caja.color:hover {
+  background-color: #f504f9 !important;
+  color:#ffffff;
 }
