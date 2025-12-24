@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vite + React</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #242424;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    #root {
+      width: 100%;
+      max-width: 520px;
+      padding: 40px 16px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .card button {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    .subtitle {
+      color: #aaa;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    /* AVATAR */
+    .avatar {
+      background: #fff;
+      margin: 20px auto;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .info {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 20px;
+    }
+
+    /* USERS */
+    .users {
+      border: 1px solid #2f9ed6;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      background: #1e1e1e;
+      padding: 12px;
+      border-bottom: 1px solid #333;
+    }
+
+    .user:last-child {
+      border-bottom: none;
+    }
+
+    .status {
+      background: #111;
+      padding: 6px 12px;
+      border-radius: 10px;
+      font-size: 13px;
+      margin-right: 10px;
+    }
+
+    .user-info {
+      flex: 1;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .delete {
+      background: red;
+      color: white;
+      border: none;
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="root"></div>
+
+<!-- React -->
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+  const { useState } = React;
+
+  function App() {
+    const [count, setCount] = useState(0);
+
+    const [users, setUsers] = useState([
+      { name: "Andrea Martínez", email: "andrea.martinez@email.com" },
+      { name: "Verónica Ríos", email: "veronica.rios@email.com" },
+      { name: "Juan Navarro", email: "juan.navarro@email.com" }
+    ]);
+
+    // Tamaño dinámico del avatar
+    const size = 90 + count * 10;
+
+    // URL avatar
+    const avatarUrl = "https://cdn-icons-png.flaticon.com/512/4140/4140048.png";
+
+    const removeUser = (index) => {
+      setUsers(users.filter((_, i) => i !== index));
+    };
+
+    return (
+      <>
+        <h1>Vite + React</h1>
+
+        <div className="card">
+          <button onClick={() => setCount(count + 1)}>
+            count is {count}
+          </button>
+        </div>
+
+        <p className="subtitle">
+          Edit <b>src/App.jsx</b> and save to test HMR
+        </p>
+
+        {/* AVATAR */}
+        <div
+          className="avatar"
+          style={{ width: size + "px", height: size + "px" }}
+        >
+          <img src={avatarUrl} alt="Avatar" />
+        </div>
+
+        <p className="info">
+          Click on the Vite and React logos to learn more
+        </p>
+
+        {/* USERS */}
+        <div className="users">
+          {users.map((u, i) => (
+            <div className="user" key={i}>
+              <span className="status">Activo</span>
+              <div className="user-info">
+                {u.name} - {u.email}
+              </div>
+              <button className="delete" onClick={() => removeUser(i)}>
+                X
+              </button>
+            </div>
+          ))}
+        </div>
+      </>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+
+</body>
+</html>

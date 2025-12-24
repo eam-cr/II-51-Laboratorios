@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fc;
-    color: #333;
+    color: #1c0c0c;
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -25,13 +25,13 @@ hr {
 .caja {
     width: 200px;
     height: 100px;
-    background-color: #4e73df;
+    background-color: #b1b6c8;
     color: white;
     text-align: center;
     line-height: 100px;
     margin: 20px auto;
     border-radius: 10px;
-    box-shadow: 10px 10px 15px rgba(43, 5, 5, 0.4);
+    box-shadow: 10px 10px 15px rgba(230, 43, 43, 0.4);
     transition: box-shadow 0.5s ease;
 }
 
@@ -42,7 +42,7 @@ hr {
 /* ======== 2. SOMBRAS EN TEXTO ======== */
 .titulo {
     font-size: 40px;
-    color: #b66666;
+    color: #633232;
     text-shadow: 3px 3px 6px #817e7e;
 }
 
@@ -67,14 +67,14 @@ hr {
 .tarjeta {
     width: 250px;
     height: 150px;
-    background-color: #f6c23e;
+    background-color: #706a5c;
     text-align: center;
     line-height: 150px;
     font-size: 18px;
     color: #fff;
     border-radius: 10px;
     margin: 40px auto;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
     transition: box-shadow 0.4s ease, transform 0.4s ease;
 }
 
